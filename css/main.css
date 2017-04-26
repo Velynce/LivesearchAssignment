@@ -1,0 +1,183 @@
+@charset "UTF-8";
+/* CSS Document */
+
+img, embed, object
+{
+	max-width: 100%;
+}
+
+@font-face {
+	font-family: 'snigletextrabold';
+	src: url('../fonts/sniglet-extrabold-webfont.woff2') format('woff2'),
+         url('../fonts/sniglet-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@-webkit-keyframes colourAnimation 
+{
+	from{background-color: rgb(102, 255, 255);}
+	to{background-color: rgb(204, 255, 255);}
+}
+
+@-moz-keyframes colourAnimation
+{
+	from{background-color: rgb(102, 255, 255);}
+	to{background-color: rgb(204, 255, 255);}
+}
+
+@keyframes colourAnimation 
+{
+	from{background-color: rgb(102, 255, 255);}
+	to{background-color: rgb(204, 255, 255);}
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	/*https://www.pexels.com/photo/red-and-yellow-kite-203928/*/
+	background-image: url("../images/pexels-photo-203928.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-origin: content-box;
+	margin: 0;
+}
+
+h4, p 
+{
+	font-family: 'Raleway', sans-serif;
+}
+
+h1
+{
+	font-family:'snigletextrabold';
+	font-size: 3.75em;
+	color: #ffa64d;
+	margin-top: 20px;
+	text-shadow: 5px 4px black;
+}
+
+p 
+{
+	padding: 0;
+	font-weight: 5px
+}
+
+label 
+{
+	font-family: 'Nunito', sans-serif;
+	font-weight: bold;
+	color: #ff8533;
+	margin-left: 10px;
+}
+
+header 
+{
+	overflow: auto;
+}
+
+h4 
+{
+	text-align: center;
+	color: black;
+}
+
+.hidden 
+{
+	display: none;
+}
+
+#mainHeader
+{
+	width: 90%;
+	text-align: center;
+	margin: 0;
+}
+
+#search{
+	width: 920px;
+	height: 500px;
+	margin: 0 auto;
+	margin-top: 10px;
+	padding: 20px;
+	background: rgba(249, 249, 249, 0.6);
+	border-radius: 10px;
+}
+
+#txtHint {
+	width: 100%;
+	font-size:10px;
+	color:#595959;
+	margin: 10px 0 0 0;
+}
+
+#txtHint a 
+{
+	float: left;
+	padding: 5px 10px 5px 10px;
+	width: 8%;
+	position: relative;
+}
+
+#txtHint a:link {
+text-decoration:none;
+display: block;
+}
+
+#txtHint a:visited {
+text-decoration:none;
+color:#999999;
+}
+
+#txtHint a:hover {
+	text-decoration:underline;
+	-webkit-animation: colourAnimation 2.5s infinite;
+	-moz-animation: colourAnimation 2.5s;
+	animation: colourAnimation 2.5s infinite;
+}
+
+#maindiv {
+	float: right;
+	width: 600px;
+	height:383px;
+	clear: left;
+	margin: 0 auto;
+	
+}
+
+#image 
+{
+	height: 100px;
+	width: auto;
+	border-radius: 10px;
+	box-shadow: 3px 3px #a6a6a6;
+}
+
+#images
+{
+	height: 80%;
+	width: auto;
+	box-shadow: 5px 5px #a6a6a6;
+}
+
+#searchbox
+{
+	width: 130px;
+	box-sizing: border-box;
+	border-radius: 8px;
+	padding: 10px 0 15px 5px;
+}
+
+#searchbox
+{
+	width: 60%;
+}
+
+#secdiv
+{
+	padding-top: 10px;
+	float: right;
+	width: 50%;
+	margin-right: 30px;
+}
+
